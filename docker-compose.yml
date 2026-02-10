@@ -7,7 +7,6 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - ./public:/srv/public
-      - visual_tester_certs:/data/caddy-shared:ro
     command: caddy run --config /etc/caddy/Caddyfile --adapter caddyfile
 
   n8n:
