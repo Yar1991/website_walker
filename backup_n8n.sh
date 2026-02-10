@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-PROJECT_DIR="/home/someone/site_walk"
+PROJECT_DIR=your_project_dir
 BACKUP_FILE="$PROJECT_DIR/backup_n8n.json"
 
 # Perform backup
