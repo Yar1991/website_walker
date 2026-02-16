@@ -11,23 +11,6 @@ An autonomous QA agent that uses the Gemini CLI + Playwright to walk websites, c
 
 ---
 
-## Table of contents
-- [Quick architecture overview](#quick-architecture-overview)
-- [Prerequisites](#prerequisites)
-- [Configuration (.env)](#configuration-env)
-- [Quickstart (development / host)](#quickstart-development--host)
-- [Docker / Production quickstart](#docker--production-quickstart)
-- [Calling the Bridge API (/run-qa)](#calling-the-bridge-api-run-qa)
-- [n8n workflow](#n8n-workflow)
-- [File layout and outputs](#file-layout-and-outputs)
-- [GIF generation & system requirements](#gif-generation--system-requirements)
-- [Logs, troubleshooting & tips](#logs-troubleshooting--tips)
-- [Security recommendations](#security-recommendations)
-- [Maintenance & backup](#maintenance--backup)
-- [License & contributing](#license--contributing)
-
----
-
 ## Quick architecture overview
 - n8n (in Docker) schedules tasks and sends prompts to the Bridge service via HTTP.
 - Bridge (bridge.js) constructs a strict Gemini CLI prompt instructing the Playwright MCP agent to perform actions and save screenshots.
